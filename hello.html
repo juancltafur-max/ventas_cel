@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>VENTAS TELEFONIA</title>
+</head>
+<body>
+ <header>
+        <h1>Celulares JCL</h1>
+        <nav>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+            <button id="ver-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</button>
+        </nav>
+    </header>
+
+    <main id="productos">
+        <h2>Nuestros Productos</h2>
+        <section id="lista-productos" class="grid-productos">
+            <article class="producto" data-id="1">
+                <h3>Smartphone Modelo X</h3>
+                <p>Potente procesador, cámara 4K, 128GB.</p>
+                <img src="placeholder_celular.jpg" alt="Smartphone Modelo X">
+                <span class="precio">$599.99</span>
+                <button class="agregar-carrito" data-producto-id="1">Añadir al Carrito</button>
+            </article>
+        </section>
+    </main>
+
+    <div id="modal-carrito" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h3>🛒 Tu Carrito de Compras</h3>
+            <ul id="items-carrito">
+                </ul>
+            <p>Total: <span id="total-carrito">$0.00</span></p>
+            <button id="finalizar-compra">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tienda Celulares JCL</p>
+    </footer>
+
+    <script src="stil.js"></script>
+</body>
+</html>
